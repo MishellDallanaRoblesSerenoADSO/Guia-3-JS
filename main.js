@@ -1,18 +1,16 @@
 addEventListener("DOMContentLoaded",()=>{
-// Ejercicio 3
-    //Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso de computación.
+// Ejercicio 4
+    //42 personas toman parte de un baile. Durante la fiesta una dama bailó con 7 caballeros, una segunda
+    //dama con 8, una tercera con 9, y así sucesivamente hasta que la última bailó con todos los hombres.
+    //Cuantas damas había en el baile?
     
-    d=0
-    while (d<5){
-        d++
-        nom=prompt("Ingrese su Nombre y Apellido: ")
-        edad=prompt("Ingrese su Edad: ")
-        n1=Number(prompt("Coloque la nota 1: "))
-        n2=Number(prompt("Coloque la nota 2: "))
-        n3=Number(prompt("Coloque la nota 3: "))
-        
-        prom=(n1+n2+n3)/3
+    dama=7
+    cont=0
+    while (dama<42){
+        console.log(`${dama}`)
+        dama++
+        cont++
 
-        console.log(`El promedio del estudiante ${nom} con ${edad} años de edad es: ${prom} `)
+        console.log(`La cantidad de damas que hay en total son: ${cont}`)
     }
 })
