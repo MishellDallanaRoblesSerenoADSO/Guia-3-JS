@@ -1,20 +1,24 @@
 addEventListener("DOMContentLoaded",()=>{
-// Ejercicio 1
-    // # En una granja se requiere saber alguna información para determinar el precio de venta por cada kilo 
-    // # de huevo. precio se determina a traves del promedio de calidad de las N gallinas que hay en la
-    // # granja. La calidad de cada gallina se obtiene según la formula:
-
-    n1=0
-    let numg=Number(prompt("Cantidad de gallinas que quiere saber su calidad: "))
-
-    while (n1<numg){
-        n1++;
-
-        cant_h=prompt("Cantidad de huevos que pone la gallina: ")
-        p=prompt("Peso de la gallina: ")
-        a=prompt("Altura de la gallina: ")
+// Ejercicio 2
+    //2. Hacer un algoritmo que al ingresar 2 números por la pantalla y se calcule la suma, resta, multiplicación
+    //y división. El proceso debe terminar cuando se hallan realizado 10 procesos (Hacer uso de
+    //contadores).
     
-        calidad=(p*a)/cant_h
-    console.log(`El precio de venta por kilo es ${calidad}`)
+    n=0
+    while (n<10){
+        num1=Number(prompt("Ingrese el numero 1: "))
+        num2=Number(prompt("Ingrese el numero 2: "))
+        
+        suma=num1+num2
+        rest=num1-num2 
+        multi=num1*num2 
+        div=num1/num2
+        
+        alert(`La suma de ${num1} + ${num2} es= ${suma}`)
+        alert(`La resta de ${num1} - ${num2} es= ${rest}`)
+        alert(`la multiplicacion de ${num1} * ${num2} es= ${multi}`)
+        alert(`La division de ${num1} / ${num2} es= ${div}`)
+        n+=1
+
     }
 })
